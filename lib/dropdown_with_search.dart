@@ -161,7 +161,9 @@ class _SearchDialogState<T> extends State<SearchDialog> {
               : BorderRadius.circular(14)),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12.0),
-        child: Column(
+        child: Container(
+            color:Colors.white,
+            child:Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
@@ -259,7 +261,7 @@ class _SearchDialogState<T> extends State<SearchDialog> {
               ),
             ),
           ],
-        ),
+        )),
       ),
     );
   }
